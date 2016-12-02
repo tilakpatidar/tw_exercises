@@ -13,6 +13,9 @@ final public class Diamond {
      */
     private static String nString(Character c, int n){
         String k = "";
+        if(n < 0){
+            throw new IllegalArgumentException("n must be greater or equal to 0");
+        }
         for(int i = 0; i < n; i++){
             k += c;
         }
@@ -26,6 +29,9 @@ final public class Diamond {
      * @return
      */
     private static String[] createTriangle(int n){
+        if(n < 1){
+            throw new IllegalArgumentException("n must be greater or equal to 1");
+        }
         String[] output = new String[n];
         int spaces = ((2 * n) - 2);
         int asterisk = 1;
@@ -96,6 +102,13 @@ final public class Diamond {
         Diamond.printDiamond(3);
         System.out.println("Printing Diamond with name");
         Diamond.printDiamondWithName(5, "Tilak");
+
+        try{
+            System.out.println("Test case 1");
+            Diamond.createTriangle(0);
+        }catch(IllegalArgumentException e){
+            System.out.println("[SUCCESS] Test case 1");
+        }
 
     }
 

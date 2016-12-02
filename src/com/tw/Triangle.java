@@ -70,22 +70,22 @@ final public class Triangle {
 
         try{
             Triangle.printNAsterisk(-2);
-            System.out.println("Test 1 failed");
+            System.out.println("[FAIL] Test 1");
         }catch (IllegalArgumentException e){
-            System.out.println("Test 1 passed");
+            System.out.println("[SUCCESS] Test 1");
         }
 
         try{
             Triangle.printlnNAsterisk(-6);
-            System.out.println("Test 2 failed");
+            System.out.println("[FAIL] Test 2");
         }catch (IllegalArgumentException e){
-            System.out.println("Test 2 passed");
+            System.out.println("[SUCCESS] Test 2");
          }
         try{
             Triangle.printRightTriangle(-8);
-            System.out.println("Test 3 failed");
+            System.out.println("[FAIL] Test 3");
         }catch (IllegalArgumentException e){
-            System.out.println("Test 3 passed");
+            System.out.println("[SUCCESS] Test 3");
         }
 
 

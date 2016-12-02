@@ -6,5 +6,6 @@ public class Main {
         Triangle.main(new String[1]);
         Diamond.main(new String[1]);
         FizzBuzz.main(new String[1]);
+        PrimeFactors.main(new String[1]);
     }
 }
