@@ -60,7 +60,7 @@ final public class Triangle {
     }
 
 
-    public static void main(){
+    public static void main(String[] args){
         //some testing code
         System.out.println("Testing Triangle");
         Triangle.printOneAsterik();
@@ -76,7 +76,7 @@ final public class Triangle {
         }
 
         try{
-            Triangle.printlnNAsterisk(-2);
+            Triangle.printlnNAsterisk(-6);
             System.out.println("Test 2 failed");
         }catch (IllegalArgumentException e){
             System.out.println("Test 2 passed");
